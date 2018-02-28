@@ -24,6 +24,7 @@ Crie o arquivo __docker-compose.yml__ e adicione o conteúdo:
     gogs:
       image: gogs/gogs
       container_name: gogs
+      restart: always
       ports:
         - "10022:22"
         - "10080:3000"
