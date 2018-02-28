@@ -98,7 +98,7 @@ E em `volumes` definimos um volume, onde os dados serão escritos no Docker Host
 
 ### Configurando o Gogs
 
-Na sessão `gogs` é onde faremos a configuração do nosso servidor Git. Assim como na configuração do MySQL apontamos a imagem e damos um nome ao container que será criado na execução do compose file.
+Na sessão `gogs` é onde faremos a configuração do nosso servidor Git. Assim como na configuração do MySQL apontamos a imagem, damos um nome ao container que será criado na execução do compose file e definimos o comportamento do serviço para reiniciar automaticamente caso ele pare ou aconteça algum erro durante sua execução.
 
 Em `ports` definimos as portas que serão vinculadas à suas correspondentes no container. Neste caso vinculamos as portas 10022 e 10080 do Docker Host às portas 22 e 3000 do container, respectivamente. Nesta ordem, também, elas representam as portas que responderão às chamadas SSH e HTTP, possibilitando o acesso aos repositórios por meio destes protocolos.
 
