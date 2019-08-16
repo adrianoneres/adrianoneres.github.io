@@ -16,7 +16,7 @@ Criaremos um compose file utilizando as imagens do [MySQL](https://hub.docker.co
 
 ## Compose file
 
-Crie o arquivo __docker-compose.yml__ e adicione o conteúdo:
+Crie o arquivo **docker-compose.yml** e adicione o conteúdo:
 
 {% highlight yml %}
   version: '3'
@@ -62,17 +62,17 @@ Acesse a interface de configuração do Gogs pelo navegador, acessando a url [ht
 
 Ao acessar pela primeira vez a interface do Gogs pela interface disponível em [http://localhost:10080](http://localhost:10080), será possível visualizar um formulário para efetuar a configuração inicial da ferramenta. Alguns valores podem ser um pouco confusos ao efetuar essa configuração então segue um guia de como fazê-los baseado na configuração de nossos containers:
 
-+ __Repository root path__: Deixe o valor padrão (/home/git/gogs-repositories), pois o script de inicialização do Gogs (start.sh) possui um link simbólico para este diretório. É claro que é possível alterar depois pelo arquivo de configuração, mas inicialmente é preferível inicia-lo assim.
+- **Repository root path**: Deixe o valor padrão (/home/git/gogs-repositories), pois o script de inicialização do Gogs (start.sh) possui um link simbólico para este diretório. É claro que é possível alterar depois pelo arquivo de configuração, mas inicialmente é preferível inicia-lo assim.
 
-+ __Run user__: Deixe o valor padrão aqui também, pois o script build.sh já possui um apontamento para o usuário git.
+- **Run user**: Deixe o valor padrão aqui também, pois o script build.sh já possui um apontamento para o usuário git.
 
-+ __Domain__: Informe o IP do Docker host, ou o DNS deste host na rede, para que seja possível acessar o Gogs pela rede.
+- **Domain**: Informe o IP do Docker host, ou o DNS deste host na rede, para que seja possível acessar o Gogs pela rede.
 
-+ __SSH Port__: Informe a porta do Docker Host para qual a porta 22 do container foi mapeada. No nosso caso será a porta 10022.
+- **SSH Port**: Informe a porta do Docker Host para qual a porta 22 do container foi mapeada. No nosso caso será a porta 10022.
 
-+ __HTTP Port__: Ao contrário da configuração anterior, a porta a ser informada aqui não é a correspondente no Docker Host, mas sim a do próprio container. No nosso caso deixaremos a porta 3000.
+- **HTTP Port**: Ao contrário da configuração anterior, a porta a ser informada aqui não é a correspondente no Docker Host, mas sim a do próprio container. No nosso caso deixaremos a porta 3000.
 
-+ __Application URL__: Esta é uma combinação do __Domain__ e da porta HTTP, desta vez a do prório Docker Host. No nosso caso será `http://{IP}:10080`, substituindo `{IP}` pelo IP do Docker Host.
+- **Application URL**: Esta é uma combinação do **Domain** e da porta HTTP, desta vez a do prório Docker Host. No nosso caso será `http://{IP}:10080`, substituindo `{IP}` pelo IP do Docker Host.
 
 ## Entendendo o compose file
 
