@@ -67,6 +67,14 @@ Após a instalação recomendo reiniciar o terminal para garantir que as configu
 
 Com o NVM instalado basta executar o comando a seguir para instalar a última versão estável.
 
+Se você utiliza **Windows**:
+
+```sh
+nvm install latest
+```
+
+Se utiliza **Linux** ou **Mac OSX**:
+
 ```sh
 nvm install node --lts
 ```
