@@ -101,7 +101,7 @@ A instalação do Yarn é opcional. Particularmente, eu gosto de utilizá-lo, ma
 
 O Yarn é um gerenciador de dependências. É uma opção ao gerenciador padrão do Node.js - o npm.
 
-Ele te possibilitará, entre outras coias, instalar, desinstalar e configurar as dependências do seu projeto.
+Ele te possibilitará, entre outras coisas, instalar, desinstalar e configurar as dependências do seu projeto.
 
 #### E como eu instalo o Yarn?
 
